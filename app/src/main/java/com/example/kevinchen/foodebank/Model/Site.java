@@ -5,7 +5,14 @@ package com.example.kevinchen.foodebank.Model;
  */
 public class Site  {
     private String mLocation;
+
     public Site (String location) {
         mLocation = location;
     }
+
+    public String getLocation() {
+        return mLocation;
+    }
+
+
 }

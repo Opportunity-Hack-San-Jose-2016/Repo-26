@@ -52,7 +52,8 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
      * TODO: remove after connecting to a real authentication system.
      */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "prasanna@shfb.org:password", "bindu@shfb.org:password", "kevin@shfb.org:password"
+            "prasanna@shfb.org:password", "bindu@shfb.org:password", "kevin@shfb.org:password",
+            "kevin@gmail.com:12345678"
     };
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
@@ -64,7 +65,6 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
-    private static String LOGIN_TAG = "login";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
