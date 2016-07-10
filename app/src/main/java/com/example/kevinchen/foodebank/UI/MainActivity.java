@@ -1,31 +1,35 @@
 package com.example.kevinchen.foodebank.UI;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.kevinchen.foodebank.Adapter.RecyclerAdapter;
 import com.example.kevinchen.foodebank.Model.Site;
 import com.example.kevinchen.foodebank.R;
 
-
-/**
- * Created by kevinchen on 7/9/16.
- */
 public class MainActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
     Site[] mSites;
+    Button mButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycler_list);
 
+        mButton = (Button)findViewById(R.id.updateButton);
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
 
         mSites = new Site[] {
                 new Site("location1"),

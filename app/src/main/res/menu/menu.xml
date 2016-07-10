@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
     <menu xmlns:tools="http://schemas.android.com/tools"
           xmlns:android="http://schemas.android.com/apk/res/android">
-        <item android:id="@+id/new_game"
+        <item android:id="@+id/notification"
               android:title="Notification"
+              android:showAsAction="always"
+              tools:ignore="AppCompatResource"/>
+
+        <item android:id="@+id/profile"
+              android:title="Profile"
               android:showAsAction="ifRoom"
               tools:ignore="AppCompatResource"/>
     </menu>
