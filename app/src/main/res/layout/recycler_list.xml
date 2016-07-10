@@ -6,16 +6,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context="com.example.kevinchen.foodebank.UI.MainActivity">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    tools:context="com.example.kevinchen.foodebank.UI.MainActivity"
+    android:background="@android:color/white">
 
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/recycleView"/>
+        android:layout_height="150dp"
+        android:id="@+id/recycleView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/background_dark" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button2"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/recycleView"
+        android:layout_alignRight="@+id/recycleView"
+        android:layout_alignEnd="@+id/recycleView"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
